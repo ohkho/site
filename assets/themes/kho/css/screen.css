@@ -31,6 +31,10 @@ p {
 	margin: 1em 0;
 }
 
+i {
+	display: block;
+}
+
 a, a:visited {
 	color: #00a;
 	text-decoration: none;
@@ -39,7 +43,6 @@ a, a:visited {
 a:hover {
 	text-decoration: underline;
 }
-
 /*****************************************************************************/
 /*
 /* Home
@@ -73,35 +76,39 @@ ul.posts {
 	bottom: 0;
 }
 
-#navbar-container {
-	background-color: #F1F1F1;
+#nav-bar-container {
+	background-color: #161616;
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	top: 0;
-	width: 216px;
+	width: 175px;
 	z-index: 2;
 }
-	#navbar-container ul {
+	#nav-bar-container ul {
 		list-style-type: none;
+		margin: 0 auto;
+		padding-top: 25px;
+		text-align: center;
+		width: 100px;
+	}
+	#nav-bar li {
+		list-style-image: none;
+		list-style-type: none;
+		margin-left: 0;
+		display: inline-block;
+		vertical-align: middle;
+		white-space: nowrap;
+	}
+	#nav-bar li .active {
+		color: green;
+	}
+	.nav-list {
 		margin: 0;
 		padding: 0;
-	}
-	#navbar li {
-		border-bottom: 1px solid transparent;
-		border-top: 1px solid transparent;
-		color: #333;
-		cursor: pointer;
-		display: block;
-		outline: none;
-		padding: 7px 0;
-		text-align: end;
-		text-shadow: white 0 1px 1px;
-		padding-right: 25px;
-	}
-	#navbar li .active {
-		color: green;
+		border: 0;
+		overflow: hidden;
 	}
 #mainview {
 	padding-left: 216px;
@@ -122,6 +129,62 @@ ul.posts {
 	min-width: 600px;
 	padding: 20px;
 }
+/*****************************************************************************/
+/*
+/* Main Navigation
+/*
+/*****************************************************************************/
+.nav-link .Logo, .nav-link .Writing, .nav-link .Tags, .nav-link .Pages, .nav-link .Work, .nav-link .About {
+	background: url('../images/nav-icons.png') no-repeat;
+}
+.nav-logo {
+	width: 100px;
+}
+.nav-item {
+	width: 50px;
+	margin: 5px 0 5px 0;
+}
+.nav-link {
+	display: block;
+	position: relative;
+	text-align: center;
+	padding: 0;
+}
+	.nav-link .Logo {
+		background-position: -100px 0;
+		height: 100px;
+		width: 100px;
+	}
+	#active .Writing {
+		background-position: -50px 0;
+		height: 50px;
+		width: 50px;
+	}
+	.nav-link .Writing {
+		background-position: 0 0;
+		height: 50px;
+		width: 50px;
+	}
+	#active .Pages {
+		background-position: -50px 0;
+		height: 50px;
+		width: 50px;
+	}
+	.nav-link .Pages {
+		background-position: 0 0;
+		height: 50px;
+		width: 50px;
+	}
+	#active .Tags {
+		background-position: -50px -50px;
+		height: 50px;
+		width: 50px;
+	}
+	.nav-link .Tags {
+		background-position: 0 -50px;
+		height: 50px;
+		width: 50px;
+	}
 
 /*****************************************************************************/
 /*
