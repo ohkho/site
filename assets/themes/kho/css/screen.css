@@ -12,10 +12,11 @@
 }
 
 body {
+	background-color: #f4f4f2;
 	cursor: default;
 	display: block;
-	font-family: Helvetica, sans-serif;
-	font-size: 13px;
+	font: 14px Helvetica,arial,freesans,clean,sans-serif;
+	line-height: 1.6;
 	margin: 8px;
 }
 
@@ -36,7 +37,7 @@ i {
 }
 
 a, a:visited {
-	color: #00a;
+	color: #3F6EC2;
 	text-decoration: none;
 }
 
@@ -60,6 +61,26 @@ ul.posts {
 
 	ul.posts span {
 		color: #aaa;
+	}
+.pagination {
+	display: block;
+}
+	.pagination a {
+		color: #3f6ec2;
+		border: 1px solid #3f6ec2;
+		padding: 10px;
+		padding-left: 20px;
+		padding-right: 20px;
+		border-radius: 30px;
+		-moz-border-radius: 30px;
+		-webkit-border-radius: 30px;
+		margin: 10px 0 10px 0;
+	}
+	.pagination .previous {
+		float: left;
+	}
+	.pagination .next {
+		float: right;
 	}
 
 /*****************************************************************************/
@@ -111,7 +132,7 @@ ul.posts {
 		overflow: hidden;
 	}
 #mainview {
-	padding-left: 216px;
+	padding-left: 200px;
 	margin: 0;
 	position: absolute;
 	left: 0;
@@ -125,16 +146,15 @@ ul.posts {
 	}
 #page-container {
 	box-sizing: border-box;
-	max-width: 850px;
-	min-width: 600px;
-	padding: 20px;
+	min-width: 500px;
+	padding: 0 0 20px 20px;
 }
 /*****************************************************************************/
 /*
 /* Main Navigation
 /*
 /*****************************************************************************/
-.nav-link .Logo, .nav-link .Writing, .nav-link .Tags, .nav-link .Pages, .nav-link .Work, .nav-link .About {
+.nav-link .logo, .nav-link .photos, .nav-link .archive, .nav-link .about {
 	background: url('../images/nav-icons.png') no-repeat;
 }
 .nav-logo {
@@ -150,37 +170,27 @@ ul.posts {
 	text-align: center;
 	padding: 0;
 }
-	.nav-link .Logo {
+	.nav-link .logo {
 		background-position: -100px 0;
 		height: 100px;
 		width: 100px;
 	}
-	#active .Writing {
+	#active .archive {
 		background-position: -50px 0;
 		height: 50px;
 		width: 50px;
 	}
-	.nav-link .Writing {
+	.nav-link .archive {
 		background-position: 0 0;
 		height: 50px;
 		width: 50px;
 	}
-	#active .Pages {
-		background-position: -50px 0;
-		height: 50px;
-		width: 50px;
-	}
-	.nav-link .Pages {
-		background-position: 0 0;
-		height: 50px;
-		width: 50px;
-	}
-	#active .Tags {
+	#active .photos {
 		background-position: -50px -50px;
 		height: 50px;
 		width: 50px;
 	}
-	.nav-link .Tags {
+	.nav-link .photos {
 		background-position: 0 -50px;
 		height: 50px;
 		width: 50px;
@@ -191,24 +201,57 @@ ul.posts {
 /* Posts
 /*
 /*****************************************************************************/
-
-#post {
-}
-
 /* standard */
-
+#post {
+	margin-top: 20px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 20px;
+}
+#post h1 {
+	color: #333;
+	font-size: 200%;
+	font-weight: bold;
+	margin: 0;
+	padding-bottom: 4px;
+	padding-top: 13px;
+	text-shadow: white 0 1px 2px;
+	line-height: 30px;
+}
+#post .meta {
+	color: #bbb;
+	display: block;
+	text-align: end;
+	margin-top: -25px;
+	font-size: 12px;
+	padding-right: 20px;
+}
+#post p {
+	width:500px;
+}
 	#post pre {
-		font-family: Helvetica, sans-serif;
-		border: 1px solid #ddd;
-		background-color: #eef;
-		padding: 10px;
+		background-color: white;
+		border-style:none;
+		color: #545454;
+		margin: 24px 0 24px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+		-webkit-box-shadow: 1px 2px 5px #b4b4b4;
+		-moz-box-shadow: 1px 2px 5px #b4b4b4;
+		box-shadow: 1px 2px 5px #b4b4b4;
+		padding: 12px 20px;
+		padding-left: 30px;
 	}
-
-	#post ul,
-	#post ol {
-		margin-left: 1.35em;
+	pre, code, tt {
+		font-family: 'M+ 1m', monospace;
+		font-size: 13px;
 	}
-
+	#post pre > code, #post p > code {
+		padding: 1px 4px 1px 4px;
+		background-color: white;
+	}
 	#post code {
 		border: 1px solid #ddd;
 		background-color: #eef;

@@ -1,6 +1,23 @@
 ---
-layout: landing
-title: "Kevin Ho | Designer"
+layout: default
+title: Designer
 ---
-{% include JB/setup %}
+{% assign hide_extended = true %}
 
+{% for post in paginator.posts %}
+{% include JB/posts %}
+{% endfor %}
+
+<div class="pagination">
+	{% if paginator.previous_page %}
+	{% if paginator.previous_page == 1 %}
+		<a href="/" class="previous">Previous</a>
+	{% else %}
+		<a href="/page{{ paginator.previous_page }}/" class="previous">Previous</a>
+	{% endif %}
+	{% endif %}
+
+	{% if paginator.next_page %} 
+		<a href="/page{{ paginator.next_page }}/" class="next">Next</a>
+	{% endif %} 
+</div>
