@@ -4,7 +4,5 @@ title: Photos
 header: photos
 group: navigation
 ---
-
-Photos
-
+<h1>Photos</h1>
 

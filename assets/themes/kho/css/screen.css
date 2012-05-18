@@ -12,7 +12,7 @@
 }
 
 body {
-	background-color: #f4f4f2;
+	background-color: #e9eaec;
 	cursor: default;
 	display: block;
 	font: 14px Helvetica,arial,freesans,clean,sans-serif;
@@ -39,6 +39,7 @@ i {
 a, a:visited {
 	color: #3F6EC2;
 	text-decoration: none;
+	text-shadow: white 0 1px 2px;
 }
 
 a:hover {
@@ -52,7 +53,7 @@ a:hover {
 
 ul.posts {
 	list-style-type: none;
-	margin-bottom: 2em;
+	margin: 1em 0;
 }
 
 	ul.posts li {
@@ -66,21 +67,15 @@ ul.posts {
 	display: block;
 }
 	.pagination a {
-		color: #3f6ec2;
-		border: 1px solid #3f6ec2;
-		padding: 10px;
-		padding-left: 20px;
-		padding-right: 20px;
-		border-radius: 30px;
-		-moz-border-radius: 30px;
-		-webkit-border-radius: 30px;
-		margin: 10px 0 10px 0;
+		font-weight: bold;
+		padding: 30px 0 30px 0;
 	}
-	.pagination .previous {
-		float: left;
-	}
-	.pagination .next {
+	.pagination .older {
 		float: right;
+		padding-right: 20px;
+	}
+	.pagination .newer {
+		float: left;
 	}
 
 /*****************************************************************************/
@@ -98,7 +93,8 @@ ul.posts {
 }
 
 #nav-bar-container {
-	background-color: #161616;
+	background: url('../images/nav-shadow.png') right #2d2e32 repeat-y;
+	border-right: 1px solid black;
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -132,7 +128,7 @@ ul.posts {
 		overflow: hidden;
 	}
 #mainview {
-	padding-left: 200px;
+	padding-left: 175px;
 	margin: 0;
 	position: absolute;
 	left: 0;
@@ -143,6 +139,8 @@ ul.posts {
 }
 	#mainview-content {
 		position: relative;
+		border-left: 1px solid white;
+		padding-left: 25px;
 	}
 #page-container {
 	box-sizing: border-box;
@@ -185,6 +183,16 @@ ul.posts {
 		height: 50px;
 		width: 50px;
 	}
+	#active .about {
+		background-position: -50px -100px;
+		height: 50px;
+		width: 50px;
+	}
+	.nav-link .about {
+		background-position: 0 -100px;
+		height: 50px;
+		width: 50px;
+	}
 	#active .photos {
 		background-position: -50px -50px;
 		height: 50px;
@@ -203,9 +211,9 @@ ul.posts {
 /*****************************************************************************/
 /* standard */
 #post {
-	margin-top: 20px;
 	border-bottom: 1px solid #ddd;
-	padding-bottom: 20px;
+	padding: 20px 0 20px 0;
+	border-top: 1px solid white;
 }
 #post h1 {
 	color: #333;
@@ -214,7 +222,6 @@ ul.posts {
 	margin: 0;
 	padding-bottom: 4px;
 	padding-top: 13px;
-	text-shadow: white 0 1px 2px;
 	line-height: 30px;
 }
 #post .meta {
@@ -273,10 +280,10 @@ ul.posts {
 		background-color: #333;
 	}
 
-	#related {
-		margin-top: 2em;
-	}
+#related, #comments {
+	margin-top: 2em;
+}
 
-	#related h2 {
-		margin-bottom: 1em;
-	}
+#related h2, #comments h2 {
+	margin-bottom: 1em;
+}
