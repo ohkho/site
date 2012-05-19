@@ -65,16 +65,17 @@ ul.posts {
 	}
 .pagination {
 	display: block;
+	min-width: 550px;
 }
 	.pagination a {
 		font-weight: bold;
 		padding: 30px 0 30px 0;
 	}
-	.pagination .older {
+	.pagination .older, .pagination .related {
 		float: right;
-		padding-right: 20px;
+		padding: 30px 20px 30px 0;
 	}
-	.pagination .newer {
+	.pagination .newer, .pagination .archive{
 		float: left;
 	}
 
@@ -142,6 +143,18 @@ ul.posts {
 		border-left: 1px solid white;
 		padding-left: 25px;
 	}
+#photoview {
+	margin-left: 175px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 3;
+}
+	#photoview-content {
+		position: relative;
+	}
 #page-container {
 	box-sizing: border-box;
 	min-width: 500px;
@@ -152,7 +165,7 @@ ul.posts {
 /* Main Navigation
 /*
 /*****************************************************************************/
-.nav-link .logo, .nav-link .photos, .nav-link .archive, .nav-link .about {
+.nav-link .logo, .nav-link .photos, .nav-link .archive, .nav-link .about, .nav-link .work {
 	background: url('../images/nav-icons.png') no-repeat;
 }
 .nav-logo {
@@ -173,12 +186,12 @@ ul.posts {
 		height: 100px;
 		width: 100px;
 	}
-	#active .archive {
+	#active .work {
 		background-position: -50px 0;
 		height: 50px;
 		width: 50px;
 	}
-	.nav-link .archive {
+	.nav-link .work {
 		background-position: 0 0;
 		height: 50px;
 		width: 50px;
@@ -280,10 +293,3 @@ ul.posts {
 		background-color: #333;
 	}
 
-#related, #comments {
-	margin-top: 2em;
-}
-
-#related h2, #comments h2 {
-	margin-bottom: 1em;
-}

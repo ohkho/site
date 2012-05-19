@@ -1,8 +1,6 @@
 ---
 layout: page
 title: Archive
-header: archive
-group: navigation
 ---
 <h1>Archive</h1>
 <ul class="posts">
