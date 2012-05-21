@@ -169,6 +169,18 @@ ul.posts {
 	#aboutview-content {
 		position: relative;
 	}
+#workview{
+	margin-left: 175px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+}
+	#workview-content {
+		position: relative;
+	}
 #page-container {
 	box-sizing: border-box;
 	min-width: 500px;
@@ -204,6 +216,44 @@ ul.posts {
 #aboutview p, #aboutview h2 {
 	margin-left: 45px;
 	width: 500px;
+}
+/*****************************************************************************/
+/*
+/* Work
+/*
+/*****************************************************************************/
+#workview #project {
+	border-bottom: 1px solid #ddd;
+	display: block;
+	margin: 33px 0 0 45px;
+}
+#headline {
+	height: 60px;
+	display: table;
+	margin-bottom: 10px;
+}
+	#headline img {
+		border: 0;
+		float: left;
+		height: 60px;
+		margin: 0 15px 0 0;
+	}
+	#headline .desc {
+		display: table-cell;
+		font-weight: lighter;
+		line-height: 20px;
+		vertical-align: middle;
+	}
+		#headline .heavy {
+			font-weight: bold;
+			font-size: 140%;
+		}
+		#headline .light {
+			color: #555;
+		}
+#project p {
+	width: 600px;
+	margin-bottom: 10px;
 }
 /*****************************************************************************/
 /*
