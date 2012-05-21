@@ -53,13 +53,11 @@ img.pw-photo-zoomed {
     user-select: none;
 }
 #showbox-exit {
-    width: 20px;
-    height: 20px;
-    background: url(../images/exit.png);
+    width: 100%;
+    height: 100%;
+    background: url(../images/exit.png) no-repeat 99% 1%;
     position:absolute;
-    right:10px;
-    top:10px;
-    z-index: 1002;
+    z-index: 0;
     cursor:pointer;
 }
 #showbox-loader {
@@ -79,10 +77,11 @@ img.pw-photo-zoomed {
 }
 #showbox .showbox-menubar {
     text-align: center;
-    width: 100%;
+    width: 40%;
     color: #919191;
     height: 35px;
     position: relative;
+    z-index: 0;
 }
 #showbox .showbox-preview {
     border-top:1px solid #181818;

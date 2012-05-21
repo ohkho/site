@@ -325,7 +325,7 @@ var PhotoWall = {
 		var menuBar = '';
 		var update  = null; 
 		if(PhotoWall.options.showBoxSocial) {
-			menuBar = '<div style="padding-top: 5px;width: 250px;position: relative;left: 50%;margin-left: -125px;"><div style="float:left;margin-top: 5px;width:80px;"><div id="gplus" class="g-plusone" data-size="medium"></div></div><div style="float:left;margin-top:5px;width:90px;"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div><div style="float:left;margin-top:5px;width:80px;" id="fblike"><fb:like send="false" layout="button_count" width="100" show_faces="false"></fb:like></div></div>';
+			menuBar = '<div style="padding-top: 5px;width: 250px;position: relative;left: 130px;margin-left: -125px;"><div style="float:left;margin-top: 5px;width:70px;"><div id="gplus" class="g-plusone" data-size="medium"></div></div><div style="float:left;margin-top:5px;width:90px;"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a></div><div style="float:left;margin-top:5px;width:80px;" id="fblike"><fb:like send="false" layout="button_count" width="100" show_faces="false"></fb:like></div></div>';
 			update  = function(){
 				if(typeof(FB) !== 'undefined')
 					 FB.XFBML.parse(document.getElementById('fblike'));
