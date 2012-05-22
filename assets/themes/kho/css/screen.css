@@ -13,6 +13,7 @@
 
 body {
 	background-color: #e9eaec;
+	color: #15171d;
 	cursor: default;
 	display: block;
 	font: 14px Helvetica,arial,freesans,clean,sans-serif;
@@ -223,38 +224,32 @@ ul.posts {
 /*
 /*****************************************************************************/
 #workview #project {
-	border-bottom: 1px solid #ddd;
 	display: block;
-	margin: 33px 0 0 45px;
+	margin: 35px 0 0 20px;
+	width: 750px;
 }
-#headline {
+#project .entity {
+	border: 0;
+	float: left;
 	height: 60px;
-	display: table;
-	margin-bottom: 10px;
+	margin: 0 15px 0 0;
 }
-	#headline img {
-		border: 0;
-		float: left;
-		height: 60px;
-		margin: 0 15px 0 0;
+#project .desc {
+	display: inline-block;
+	line-height: 20px;
+}
+	.desc .heavy {
+		font-weight: bold;
+		font-size: 140%;
 	}
-	#headline .desc {
-		display: table-cell;
+	.desc .light {
+		color: #555;
 		font-weight: lighter;
-		line-height: 20px;
-		vertical-align: middle;
 	}
-		#headline .heavy {
-			font-weight: bold;
-			font-size: 140%;
-		}
-		#headline .light {
-			color: #555;
-		}
-#project p {
-	width: 600px;
-	margin-bottom: 10px;
-}
+	.desc p {
+		width: 550px;
+		margin-bottom: 10px;
+	}
 /*****************************************************************************/
 /*
 /* Main Navigation

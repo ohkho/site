@@ -41,7 +41,7 @@ img.pw-photo-zoomed {
     height:100%;
     top:0px;
     left:0px;
-    background:#000;
+    background-color:rgba(0, 0, 0, 0.9);
     z-index: 1001;
     overflow:hidden;
 }
