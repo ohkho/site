@@ -241,6 +241,7 @@ ul.posts {
 #workview #project {
 	display: block;
 	margin-left: 20px;
+	width: 800px;
 }
 #project .entity {
 	border: 0;
