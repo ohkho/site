@@ -40,7 +40,7 @@ i {
 a, a:visited {
 	color: #3F6EC2;
 	text-decoration: none;
-	text-shadow: white 0 1px 2px;
+	text-shadow: white 0 1px 0;
 }
 
 a:hover {
@@ -181,12 +181,27 @@ ul.posts {
 }
 	#workview-content {
 		position: relative;
+		padding-top: 35px;
 	}
 #page-container {
 	box-sizing: border-box;
 	min-width: 500px;
 	padding: 0 0 20px 20px;
 }
+.footer {
+	bottom: 10px;
+	color:rgba(0, 0, 0, 0.5);
+	font-size: 12px;
+	position: absolute;
+	text-align: center;
+	width: 175px;
+	text-shadow: rgba(255, 255, 255, 0.1) 0 1px 0;
+}
+	.footer a {
+		color:rgba(0, 0, 0, 0.5);
+		font-weight: bold;
+		text-shadow: rgba(255, 255, 255, 0.1) 0 1px 0;
+	}
 /*****************************************************************************/
 /*
 /* About
@@ -212,7 +227,7 @@ ul.posts {
 	bottom: -230px;
 	position: relative;
 	left: 45px;
-	text-shadow: black 0 1px 2px;
+	text-shadow: black 0 1px 0;
 }
 #aboutview p, #aboutview h2 {
 	margin-left: 45px;
@@ -225,14 +240,13 @@ ul.posts {
 /*****************************************************************************/
 #workview #project {
 	display: block;
-	margin: 35px 0 0 20px;
-	width: 750px;
+	margin-left: 20px;
 }
 #project .entity {
 	border: 0;
 	float: left;
 	height: 60px;
-	margin: 0 15px 0 0;
+	margin: 0 15px 20px 0;
 }
 #project .desc {
 	display: inline-block;
@@ -250,6 +264,9 @@ ul.posts {
 		width: 550px;
 		margin-bottom: 10px;
 	}
+.faded {
+	margin: auto;
+}
 /*****************************************************************************/
 /*
 /* Main Navigation
@@ -272,10 +289,15 @@ ul.posts {
 	padding: 0;
 }
 	.nav-link .logo {
-		background-position: -100px 0;
+		background-position: -150px 0;
 		height: 100px;
 		width: 100px;
 	}
+		.nav-link .logo:hover {
+			background-position: -150px -100px;
+			height: 100px;
+			width: 100px;
+		}
 	#active .work {
 		background-position: -50px 0;
 		height: 50px;
@@ -286,6 +308,11 @@ ul.posts {
 		height: 50px;
 		width: 50px;
 	}
+		.nav-link .work:hover {
+			background-position: -100px 0;
+			height: 50px;
+			width: 50px;
+		}
 	#active .about {
 		background-position: -50px -100px;
 		height: 50px;
@@ -296,6 +323,11 @@ ul.posts {
 		height: 50px;
 		width: 50px;
 	}
+		.nav-link .about:hover {
+			background-position: -100px -100px;
+			height: 50px;
+			width: 50px;
+		}
 	#active .photos {
 		background-position: -50px -50px;
 		height: 50px;
@@ -306,6 +338,11 @@ ul.posts {
 		height: 50px;
 		width: 50px;
 	}
+		.nav-link .photos:hover {
+			background-position: -100px -50px;
+			height: 50px;
+			width: 50px;
+		}
 
 /*****************************************************************************/
 /*
@@ -330,7 +367,7 @@ ul.posts {
 #post .meta {
 	color: #bbb;
 	display: block;
-	text-align: end;
+	text-align: right;
 	margin-top: -25px;
 	font-size: 12px;
 	padding-right: 20px;
