@@ -11,7 +11,7 @@ I'm a product designer from Silicon Valley. I'm passionate about designing consu
 This site was built on a Mac, using Terminal, Git, Ruby and Photoshop. It is powered by the simple yet powerful Jekyll, hosted on Media Temple.
 
 ## Connect ##
-You can find me on [Twitter](http://www.twitter.com/kho "Twitter"), [Facebook](http://www.facebook.com/ohkho "Facebook"), [LinkedIn](http://www.linkedin.com/in/ohkho "LinkedIn"), [Dribbble](http://www.dribbble.com/kho "Dribbble"), or <kho@ohkho.com>
+You can find me on [Twitter](http://www.twitter.com/kho "Twitter"), [Facebook](http://www.facebook.com/ohkho "Facebook"), [LinkedIn](http://www.linkedin.com/in/ohkho "LinkedIn"), [Quora](http://www.quora.com/Kevin-Ho "Quora"), [Dribbble](http://www.dribbble.com/kho "Dribbble"), [Google+](https://plus.google.com/113305421971588510520/about "Google+") <br/>Or simply email <kho@ohkho.com>
 
 <p>
 	<a href="https://twitter.com/kho" class="twitter-follow-button" data-show-count="false">Follow @kho</a>
