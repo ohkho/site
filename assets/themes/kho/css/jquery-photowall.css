@@ -41,9 +41,24 @@ img.pw-photo-zoomed {
     height:100%;
     top:0px;
     left:0px;
-    background-color:rgba(0, 0, 0, 0.9);
     z-index: 1001;
     overflow:hidden;
+
+  /* fallback */
+  background-color:rgba(0, 0, 0, 0.7);
+  
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from rgba(0, 0, 0, .2), to rgba(0, 0, 0, .9));
+  
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0.9));
+  
+  /* Firefox 3.6+ */ 
+  background: -moz-radial-gradient(circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, .9));
+  
+  /* IE 10 */ 
+  background: -ms-radial-gradient(circle, rgba(0, 0, 0, .2), rgba(0, 0, 0, .9));
 }
 .unselect {
     -webkit-user-select: none;
@@ -64,15 +79,23 @@ img.pw-photo-zoomed {
     position: absolute;
     top: 50%;
     left:50%;
-    width: 16px;
-    height: 16px;
-    background: #000 url(../images/loader.gif);
+    width: 42px;
+    height: 42px;
+    background: url(../images/loader.gif) no-repeat rgba(0, 0, 0, .6);
     margin:-80px 0 0 -8px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
 }
 #showbox .showbox-image {
     position:relative;
 }
 #showbox .showbox-image img {
+	border-top: rgba(255, 255, 255, 0.3) 1px solid;
+	border-left: rgba(255, 255, 255, 0.3) 1px solid;
+	border-bottom: rgba(0, 0, 0, 0.7) 1px solid;
+	border-right : rgba(0, 0, 0, 0.7) 1px solid;
     cursor:pointer;
 }
 #showbox .showbox-menubar {
@@ -84,8 +107,8 @@ img.pw-photo-zoomed {
     z-index: 0;
 }
 #showbox .showbox-preview {
-    border-top:1px solid #181818;
-    background: #0A0A0A;
+	border-top: 1px solid rgba(255, 255, 255, 0.2);
+	background: rgba(0, 0, 0, 0.8);
     position:fixed;
     height: 80px;
     width:100%;
